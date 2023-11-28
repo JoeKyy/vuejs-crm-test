@@ -13,6 +13,7 @@ Este é um sistema de gerenciamento de relacionamento com clientes (CRM) desenvo
 
 ## Configuração do Projeto
 
+
 ### Instale as dependências com:
 ```sh
 npm install
@@ -21,6 +22,13 @@ npm install
 ### Compilar e Recarregar Automaticamente para Desenvolvimento
 ```sh
 npm run dev
+```
+
+### Servidor Backend de Desenvolvimento
+Este projeto usa `json-server` para simular uma API de backend durante o desenvolvimento. Para iniciar o `json-server` e servir os dados do arquivo `database.json`, execute o seguinte comando:
+
+```sh
+npm run server
 ```
 
 ### Compilar e Minificar para Produção
