@@ -2,9 +2,9 @@
     //*** Route is only local, Router is for all app */
     import { useRouter } from 'vue-router'
     import { FormKit } from '@formkit/vue'
-    import ClientService from '../services/ClientService';
-    import Heading from '../components/ui/Heading.vue';
-    import RouterLink from '../components/ui/RouterLink.vue';
+    import ClientService from '../../services/ClientService';
+    import Heading from '../../components/ui/Heading.vue';
+    import RouterLink from '../../components/ui/RouterLink.vue';
 
     const router = useRouter()
 
@@ -64,6 +64,18 @@
                         help="Escreva o sobrenome do cliente"
                         validation="required"
                         :validation-messages="{ required: 'Sobrenome do cliente é obrigatorio' }"
+                        validation-visibility="blur"
+                    />
+
+                    <FormKit
+                        type="text"
+                        label="Documento"
+                        name="document"
+                        placeholder="Documento"
+                        prefix-icon="tag"
+                        help="Escreva o docuento do cliente"
+                        validation="required"
+                        :validation-messages="{ required: 'Documento do cliente é obrigatorio' }"
                         validation-visibility="blur"
                     />
 

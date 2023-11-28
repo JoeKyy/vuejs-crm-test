@@ -1,9 +1,9 @@
 <script setup>
     import { onMounted, ref, computed } from 'vue'
-    import ClientService from '../services/ClientService'
-    import Client from '../components/Client.vue'
-    import Heading from '../components/ui/Heading.vue'
-    import RouterLink from '../components/ui/RouterLink.vue'
+    import ClientService from '../../services/ClientService'
+    import Client from '../../components/Client.vue'
+    import Heading from '../../components/ui/Heading.vue'
+    import RouterLink from '../../components/ui/RouterLink.vue'
 
     defineProps({
         title: {

@@ -3,9 +3,9 @@
     //*** Route is only local, Router is for all app */
     import { useRouter, useRoute } from 'vue-router'
     import { FormKit } from '@formkit/vue'
-    import ClientService from '../services/ClientService';
-    import Heading from '../components/ui/Heading.vue';
-    import RouterLink from '../components/ui/RouterLink.vue';
+    import ClientService from '../../services/ClientService';
+    import Heading from '../../components/ui/Heading.vue';
+    import RouterLink from '../../components/ui/RouterLink.vue';
 
     const route = useRoute()
     const router = useRouter()
@@ -89,6 +89,19 @@
                         :validation-messages="{ required: 'Email do cliente é obrigatorio', email: 'Email do cliente não é valido' }"
                         validation-visibility="blur"
                         v-model="formData.email"
+                    />
+
+                    <FormKit
+                        type="text"
+                        label="Documento"
+                        name="document"
+                        placeholder="Documento"
+                        prefix-icon="tag"
+                        help="Escreva o docuento do cliente"
+                        validation="required"
+                        :validation-messages="{ required: 'Documento do cliente é obrigatorio' }"
+                        validation-visibility="blur"
+                        v-model="formData.document"
                     />
 
                     <FormKit
