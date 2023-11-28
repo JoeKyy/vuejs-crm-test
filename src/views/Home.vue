@@ -10,14 +10,15 @@
 </script>
 
 <template>
-    <div class="flex justify-center items-center">
-        <div class="flex gap-4">
-            <RouterLink>
-                Adicionar cliente
-            </RouterLink>
-            <RouterLink>
-                Listar clientes
-            </RouterLink>
-        </div>
+    <div class="flex flex-wrap gap-4 pt-4 justify-center items-center">
+        <RouterLink to="list-client">
+            Clientes
+        </RouterLink>
+        <RouterLink>
+            Produtos
+        </RouterLink>
+        <RouterLink>
+            Associações
+        </RouterLink>
     </div>
 </template>
