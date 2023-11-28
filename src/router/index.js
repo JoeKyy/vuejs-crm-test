@@ -35,6 +35,30 @@ const router = createRouter({
                 title: 'Listar Clientes'
             }
         },
+        {
+            path: '/add-product',
+            name: 'add-product',
+            component: () => import('../views/product/NewProductView.vue'),
+            props: {
+                title: 'Adicionar Produtos'
+            }
+        },
+        {
+            path: '/edit-product/:id',
+            name: 'edit-product',
+            component: () => import('../views/product/EditProductView.vue'),
+            props: {
+                title: 'Editar Produtos'
+            }
+        },
+        {
+            path: '/list-product',
+            name: 'list-product',
+            component: () => import('../views/product/ProductView.vue'),
+            props: {
+                title: 'Listar Produtos'
+            }
+        },
     ]
 })
 

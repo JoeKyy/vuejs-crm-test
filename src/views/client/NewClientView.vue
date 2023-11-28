@@ -1,5 +1,4 @@
 <script setup>
-    //*** Route is only local, Router is for all app */
     import { useRouter } from 'vue-router'
     import { FormKit } from '@formkit/vue'
     import ClientService from '../../services/ClientService';

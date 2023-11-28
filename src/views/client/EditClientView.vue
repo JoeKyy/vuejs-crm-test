@@ -1,6 +1,5 @@
 <script setup>
     import { onMounted, reactive } from 'vue'
-    //*** Route is only local, Router is for all app */
     import { useRouter, useRoute } from 'vue-router'
     import { FormKit } from '@formkit/vue'
     import ClientService from '../../services/ClientService';

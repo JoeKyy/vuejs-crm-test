@@ -14,7 +14,7 @@
         <RouterLink to="list-client">
             Clientes
         </RouterLink>
-        <RouterLink>
+        <RouterLink to="list-product">
             Produtos
         </RouterLink>
         <RouterLink>
