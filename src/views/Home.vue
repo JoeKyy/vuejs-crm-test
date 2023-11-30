@@ -17,7 +17,7 @@
         <RouterLink to="list-product">
             Produtos
         </RouterLink>
-        <RouterLink>
+        <RouterLink to="list-association">
             Associações
         </RouterLink>
     </div>

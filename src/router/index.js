@@ -59,6 +59,14 @@ const router = createRouter({
                 title: 'Listar Produtos'
             }
         },
+        {
+            path: '/list-association',
+            name: 'list-association',
+            component: () => import('../views/association/AssociationView.vue'),
+            props: {
+                title: 'Listar Associações'
+            }
+        },
     ]
 })
 
