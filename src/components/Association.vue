@@ -7,7 +7,7 @@
     })
 
     defineEmits([
-        'delete-product'
+        'delete-association'
     ])
 </script>
 
