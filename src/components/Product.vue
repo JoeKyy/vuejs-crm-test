@@ -42,7 +42,7 @@
             </RouterLink>
 
             <button
-                @click="$emit('delete-client', product.id)"
+                @click="$emit('delete-product', product.id)"
                 class="text-red-600 hover:text-red-900"
             >
                 Deletar
